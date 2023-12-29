@@ -2,10 +2,10 @@
   key: {
     remoteJid: '573046767743@s.whatsapp.net',
     fromMe: false,
-    id: '3AD029306875E00F0603',
+    id: '3A065ECCF2CF51B6F5AB',
     participant: undefined
   },
-  messageTimestamp: 1703820224,
+  messageTimestamp: 1703833543,
   pushName: 'Valentina Escobar 🌮🤍',
   broadcast: false,
   message: Message {
@@ -19,8 +19,8 @@
   from: '573046767743'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_faa10e02-c888-4b09-a859-a2d236db3c2f',
-  keyword: 'key_8233c12a-6eba-4427-aa8d-c85a031a3786',
+  ref: 'ans_1a06baa2-b4f1-492e-b559-ff31c74c6709',
+  keyword: 'key_6f82b3b6-9c25-428c-8cdb-e14cfcdafac0',
   answer: '🙌 Hola bienvenido a la Freseria',
   options: {
     media: null,
@@ -34,11 +34,11 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'f90f005ff52b803758cc87bb9e13004e'
+  refSerialize: '3facdacbf083be1d8d5fed649edb6355'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_be2fc4b5-f3c2-4824-9d95-7d771bb500b3',
-  keyword: 'ans_faa10e02-c888-4b09-a859-a2d236db3c2f',
+  ref: 'ans_1a9f3a4e-c688-4d5f-bac1-d2d707bda9b0',
+  keyword: 'ans_1a06baa2-b4f1-492e-b559-ff31c74c6709',
   answer: 'Escribe un mensaje con el número de la opción que desees:\n' +
     '👉 *1*  Domicilios\n' +
     '👉 *2*  Recoger pedido en tienda\n' +
@@ -55,16 +55,16 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '950d8c44d28e8eb9ca9231e0349fb63c'
+  refSerialize: '4bae289810bc4d2b68a4bcef774e4cbe'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573046767743@s.whatsapp.net',
     fromMe: false,
-    id: '3A2BB1798ACAD9672272',
+    id: '3A04F13CF5349486AE70',
     participant: undefined
   },
-  messageTimestamp: 1703820229,
+  messageTimestamp: 1703833546,
   pushName: 'Valentina Escobar 🌮🤍',
   broadcast: false,
   message: Message {
@@ -78,8 +78,8 @@
   from: '573046767743'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_fe45a73b-d18e-4db0-a684-46f0def4557c',
-  keyword: 'key_af482ce5-fc37-429f-9a4a-8e9b514058ec',
+  ref: 'ans_bcd48bf9-7270-48c1-924f-8d8ffdead48b',
+  keyword: 'key_80b97ece-7f52-40eb-8cc7-f20a8c1009e4',
   answer: '📄 1. Consultar Menú\n📇 2. Ya sé que pedir',
   options: {
     media: null,
@@ -89,20 +89,26 @@
     delay: 0,
     idle: null,
     ref: null,
-    nested: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    nested: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
     keyword: {},
     callback: false
   },
-  refSerialize: '9f846ab62ffc1cbca8fcf06422921542'
+  refSerialize: 'e3e377e32bbfd94939bc85dd75a87a2f'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573046767743@s.whatsapp.net',
     fromMe: false,
-    id: '3AAD56190444D99F978E',
+    id: '3A4F91D14C692FAF49C9',
     participant: undefined
   },
-  messageTimestamp: 1703820235,
+  messageTimestamp: 1703833548,
   pushName: 'Valentina Escobar 🌮🤍',
   broadcast: false,
   message: Message {
@@ -116,9 +122,27 @@
   from: '573046767743'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_57f362bf-3dbc-4cf7-ac18-250f1e441841',
-  keyword: 'key_f3857915-6068-4c9e-8408-33d2d2802958',
-  answer: 'Escribe Tu dirección',
+  ref: 'ans_d29164b7-e7e4-42ba-8033-fced6b2c14ae',
+  keyword: 'key_911b01dd-3701-4cf7-b489-a3c587c7ee5e',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '533e46c54d549c771d8817c6a1076596'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_c279c75c-605f-4905-abbb-4a28766c991b',
+  keyword: 'ans_d29164b7-e7e4-42ba-8033-fced6b2c14ae',
+  answer: '__capture_only_intended__',
   options: {
     media: null,
     buttons: [],
@@ -131,25 +155,25 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '5a27cc61b5d358aaafec8da3317e8c6d'
+  refSerialize: '6c8cc141d9d6b941ba1d86389b80c655'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573046767743@s.whatsapp.net',
     fromMe: false,
-    id: '3AF170C9E93FAD065583',
+    id: '3A0066AE68424E5E9064',
     participant: undefined
   },
-  messageTimestamp: 1703820239,
+  messageTimestamp: 1703833551,
   pushName: 'Valentina Escobar 🌮🤍',
   broadcast: false,
   message: Message {
-    conversation: 'Gracias',
+    conversation: 'FBI',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Gracias',
+  body: 'FBI',
   from: '573046767743'
 }

@@ -57,9 +57,14 @@ const flujoMenu = addKeyword(['3', 'menú', '1']).addAnswer(
     [flujoPasteles,flujoBebidas,flujoFresas]
 )
 
-const flujoYaSePedir = addKeyword(['2','Ya sé que pedir']).addAnswer('Escribe Tu dirección',{capture:true}, (ctx)=>{
-    console.log('Aquí viene la dirección: ', ctx.body)
-})
+const flujoYaSePedir = addKeyword(['2', 'Ya sé que pedir'])
+    .addAction(async (_, { flowDynamic }) => {
+        return await flowDynamic('Escribe la dirección donde deseas recibir tu pedido')
+    })
+    .addAction({ capture: true }, async (ctx, { flowDynamic, state }) => {
+        await state.update({ direccion: ctx.body })
+        return await flowDynamic(`Dirección ingresada: ${ctx.body}`)
+    })
 
 const flowDomicilio = addKeyword(['domicilio', 'Domicilio', '1']).addAnswer(
     [
@@ -72,7 +77,7 @@ const flowDomicilio = addKeyword(['domicilio', 'Domicilio', '1']).addAnswer(
 )
 
 
-const flowPrincipal = addKeyword(['Hola', 'Buenas', '¿Cómo estás?', 'Saludos', '¡Hola, bot!', 
+const flowPrincipal = addKeyword(['Hola','Buenos días', 'Buenas', '¿Cómo estás?', 'Saludos', '¡Hola, bot!',
 'Hola, ¿estás ahí?', 'Iniciar conversación', 'Empezar chat', '¿Qué tal?', 'Hey', '¿Hola, qué haces?', 'Buen día', 
 'Buenas tardes', 'Buenas noches', 'Hello', 'Hi', '¿Hay alguien?', '¿Puedo preguntar algo?', 
 'Hola, ¿me puedes ayudar?', 'buenas', 'hola','1'])
@@ -91,17 +96,19 @@ const flowPrincipal = addKeyword(['Hola', 'Buenas', '¿Cómo estás?', 'Saludos'
 
 
 const main = async () => {
-    const adapterDB = new MockAdapter()
-    const adapterFlow = createFlow([flowPrincipal])
-    const adapterProvider = createProvider(BaileysProvider)
+    const adapterDB = new MockAdapter();
+    const adapterFlow = createFlow([flowPrincipal]);
+    const adapterProvider = createProvider(BaileysProvider);
 
     createBot({
         flow: adapterFlow,
         provider: adapterProvider,
         database: adapterDB,
-    })
+    });
 
-    QRPortalWeb()
-}
+    QRPortalWeb();
+};
 
-main()
+main();
+
+

@@ -5,18 +5,6 @@ const BaileysProvider = require('@bot-whatsapp/provider/baileys')
 const MockAdapter = require('@bot-whatsapp/database/mock')
 
 
-
- 
-
-const flowGracias = addKeyword(['gracias', 'grac','Gracias','Muchas gracias', 'Muchísimas gracias','Muchisimas gracias']).addAnswer(
-    [
-        '🚀 En la freseria estamos para servirte, esperamos hayas tenido un buen servicio',
-        '[*buymeacoffee*] https://www.buymeacoffee.com/leifermendez',
-        '\n*1* Para siguiente reiniciar.',
-    ]
-)
-
-
 const flujoPasteles = addKeyword(['1','Pasteles']).addAnswer(
     [
         'Escriba el número de la opción que desea elegir',
@@ -57,13 +45,21 @@ const flujoMenu = addKeyword(['3', 'menú', '1']).addAnswer(
     [flujoPasteles,flujoBebidas,flujoFresas]
 )
 
-const flujoYaSePedir = addKeyword(['2', 'Ya sé que pedir'])
-    .addAction(async (_, { flowDynamic }) => {
-        return await flowDynamic('Escribe la dirección donde deseas recibir tu pedido')
+
+const flujoYaSePedir = addKeyword(['2','Ya sé que pedir'])
+    .addAnswer('¿Cual es tu nombre?', {capture: true}, async (ctx, { state }) => {
+        const nombreCapturado = ctx.body;
+        console.log('Nombre capturado:', nombreCapturado);
+
+        // Asegúrate de que se está llamando a la siguiente pregunta
+        console.log('Llamando a la siguiente pregunta...');
+
+        await state.update({ name: nombreCapturado });
     })
-    .addAction({ capture: true }, async (ctx, { flowDynamic, state }) => {
-        await state.update({ direccion: ctx.body })
-        return await flowDynamic(`Dirección ingresada: ${ctx.body}`)
+    .addAnswer('¿Cual es tu direccion?', {capture: true}, async (ctx, { state }) => {
+        const direccionCapturada = ctx.body;
+        console.log('Dirección capturada:', direccionCapturada);
+        await state.update({ dir: ctx.body })
     })
 
 const flowDomicilio = addKeyword(['domicilio', 'Domicilio', '1']).addAnswer(
@@ -73,26 +69,27 @@ const flowDomicilio = addKeyword(['domicilio', 'Domicilio', '1']).addAnswer(
     ],
     null,
     null,
-    [flowGracias, flujoMenu,flujoYaSePedir]
+    [flujoYaSePedir, flujoMenu]
 )
 
-
+// Crear flujo principal
 const flowPrincipal = addKeyword(['Hola','Buenos días', 'Buenas', '¿Cómo estás?', 'Saludos', '¡Hola, bot!',
-'Hola, ¿estás ahí?', 'Iniciar conversación', 'Empezar chat', '¿Qué tal?', 'Hey', '¿Hola, qué haces?', 'Buen día', 
-'Buenas tardes', 'Buenas noches', 'Hello', 'Hi', '¿Hay alguien?', '¿Puedo preguntar algo?', 
-'Hola, ¿me puedes ayudar?', 'buenas', 'hola','1'])
-    .addAnswer('🙌 Hola bienvenido a la Freseria')
-    .addAnswer(
+    'Hola, ¿estás ahí?', 'Iniciar conversación', 'Empezar chat', '¿Qué tal?', 'Hey', '¿Hola, qué haces?', 'Buen día',
+    'Buenas tardes', 'Buenas noches', 'Hello', 'Hi', '¿Hay alguien?', '¿Puedo preguntar algo?',
+    'Hola, ¿me puedes ayudar?', 'buenas', 'hola','1']).addAnswer('🙌 Hola bienvenido a la Freseria').addAnswer(
         [
             'Escribe un mensaje con el número de la opción que desees:',
             '👉 *1*  Domicilios',
             '👉 *2*  Recoger pedido en tienda',
-            '👉 *3*  Ver Menú',
+            '👉 *3*  Ver menú',
+
         ],
         null,
         null,
-        [flowDomicilio, flowGracias,flujoMenu]
-    )
+        [flujoYaSePedir,flowDomicilio,flujoMenu]
+)
+
+
 
 
 const main = async () => {

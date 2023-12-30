@@ -15,8 +15,8 @@ This repository houses the codebase for a WhatsApp chatbot designed for La Frese
 - **Docker:** Containerization technology that simplifies deployment and ensures consistent environments across different stages of development.
 
 ## How to Use:
-1. [Instructions on setting up and deploying the chatbot]
-2. [Any dependencies or prerequisites]
-3. [Additional information for contributors or users]
+1. npm create bot-whatsapp@latest
+2. npm install
+3. npm start
 
 Feel free to contribute to the development and improvement of this WhatsApp chatbot for La Freseria Café. We welcome your ideas and enhancements to make the ordering process even more seamless and enjoyable for customers.

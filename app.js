@@ -18,7 +18,7 @@ const flujoPedido = addKeyword(['Hola','Buenos días', 'Buenas', '¿Cómo estás
     }).addAnswer(null, null, async (_, { flowDynamic, state }) => {
         const myState = state.getMyState()
         await flowDynamic(`Confirmación del pedido: \n${myState.pedido}`)
-    }).addAnswer(['¿Confirmas tu pedido? Escribe si o no  de acuerdo a la opción que deseas escoger #️⃣', 'Si ✅','No ❌'],{capture:true},async(ctx, {state, flowDynamic, gotoFlow}) => {
+    }).addAnswer(['¿Confirmas tu pedido? Escribe *Si* o *No* de acuerdo a la opción que deseas escoger #️⃣', 'Si ✅','No ❌'],{capture:true},async(ctx, {state, flowDynamic, gotoFlow}) => {
 
         console.log('...')
 
@@ -46,7 +46,7 @@ const flujoDatosPedido = addKeyword(['Si', 'si', 'SI'])
     }).addAnswer('Tus datos son:', null, async (_, { flowDynamic, state }) => {
         const myState = state.getMyState()
         await flowDynamic(`Nombre: ${myState.name} \nDirección: ${myState.dir}`)
-    }).addAnswer(['¿Confirmas tus datos? Escribe  si o no dependiendo la opción que deseas escoger #️⃣', 'Si ✅','No ❌'],{capture:true},async(ctx, {state, flowDynamic, gotoFlow}) => {
+    }).addAnswer(['¿Confirmas tus datos? Escribe *Si* o *No* dependiendo la opción que deseas escoger #️⃣', 'Si ✅','No ❌'],{capture:true},async(ctx, {state, flowDynamic, gotoFlow}) => {
 
         console.log('...')
 

@@ -2,11 +2,11 @@
   key: {
     remoteJid: '573046767743@s.whatsapp.net',
     fromMe: false,
-    id: '3A9A805B32B5C9A0E11B',
+    id: '3A975A1F68C31E468CFF',
     participant: undefined
   },
-  messageTimestamp: 1704585289,
-  pushName: 'Valentina Escobar 🌮🤍',
+  messageTimestamp: 1711494492,
+  pushName: 'Valentina Escobar🤍🌮',
   broadcast: false,
   message: Message {
     conversation: 'Hola',
@@ -19,8 +19,8 @@
   from: '573046767743'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_14f8340c-e1bc-46a4-b0bc-813df1d34732',
-  keyword: 'key_99e6cc1e-d885-4c4a-b1f8-5d22d87eed4e',
+  ref: 'ans_effcea47-c0ff-49c2-848c-57502b0c7e4b',
+  keyword: 'key_c4e3a486-c827-4823-8572-64b78b6ea29c',
   answer: '🙌 Hola bienvenido a la Freseria🍓',
   options: {
     media: null,
@@ -34,32 +34,15 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '8341a13ae93f2a4b440b35456741bb0b'
+  refSerialize: '99e683a682170d4ebd4946236af6b8d8'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_dbab6415-20a9-43cc-831d-bfb5a39c9842',
-  keyword: 'ans_14f8340c-e1bc-46a4-b0bc-813df1d34732',
-  answer: 'Sigue este enlace para ver nuestro catálogo en WhatsApp: https://wa.me/c/573134190482\n' +
-    'A continuación te preguntaremos los detalles de tu pedido 💌',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '48bf2db930ce76baac76c74e534cb52f'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_49aa252e-7bb7-40d5-8bea-c76b9394368e',
-  keyword: 'ans_dbab6415-20a9-43cc-831d-bfb5a39c9842',
-  answer: '¿Qué deseas ordenar?\n' +
-    'Recuerda escribir todos los productos que deseas ordenar en un solo mensaje',
+  ref: 'ans_605ec2fa-00b9-4817-a5f3-a0526c89791f',
+  keyword: 'ans_effcea47-c0ff-49c2-848c-57502b0c7e4b',
+  answer: 'Escribe un mensaje con el número de la opción que desees:\n' +
+    '👉 *A*  Domicilios\n' +
+    '👉 *B*  Recoger pedido en tienda\n' +
+    '👉 *C*  Regalos',
   options: {
     media: null,
     buttons: [],
@@ -72,32 +55,52 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'ea7ea2556ce1716c3449e4b6dd5ecf2a'
+  refSerialize: '8f7e6ee96a216ba0262b3da8be480185'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573046767743@s.whatsapp.net',
     fromMe: false,
-    id: '3AE1FC657F3A79D4BC71',
+    id: '3AAFCF22B3C5092DC96F',
     participant: undefined
   },
-  messageTimestamp: 1704585294,
-  pushName: 'Valentina Escobar 🌮🤍',
+  messageTimestamp: 1711494506,
+  pushName: 'Valentina Escobar🤍🌮',
   broadcast: false,
   message: Message {
-    conversation: 'Hdbs',
+    conversation: 'A',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Hdbs',
+  body: 'A',
+  from: '573046767743'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3AA83E1041B47147EB8F',
+    participant: undefined
+  },
+  messageTimestamp: 1711494531,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'A\nPedro\nAish\nSusuysvdhw',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'A\nPedro\nAish\nSusuysvdhw',
   from: '573046767743'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_cbf6be42-4fa8-4f7f-8fcd-66a864eff22e',
-  keyword: 'ans_ef8897c3-628b-4b1c-9978-7ff99d3ccd3a',
-  answer: '¿Confirmas tu pedido? Escribe si o no  de acuerdo a la opción que deseas escoger #️⃣\n' +
+  ref: 'ans_c0e1f2db-bdad-49f1-8c4f-fbf1f5306c03',
+  keyword: 'ans_6e8d7f6a-e63d-40e6-bbda-c9494fc7881c',
+  answer: '¿Confirmas tu pedido? Escribe *Si* o *No* de acuerdo a la opción que deseas escoger\n' +
     'Si ✅\n' +
     'No ❌',
   options: {
@@ -112,17 +115,17 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '04ac2b8dedc11073cc37c05e05f544c4'
+  refSerialize: '05833c05f9ab7e132e11cbe0e5dd5a02'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573046767743@s.whatsapp.net',
     fromMe: false,
-    id: '3A3AA551A69A2BEAE4D5',
+    id: '3A79774A6C3D5F689E29',
     participant: undefined
   },
-  messageTimestamp: 1704585302,
-  pushName: 'Valentina Escobar 🌮🤍',
+  messageTimestamp: 1711494534,
+  pushName: 'Valentina Escobar🤍🌮',
   broadcast: false,
   message: Message {
     conversation: 'Si',
@@ -138,25 +141,25 @@
   key: {
     remoteJid: '573046767743@s.whatsapp.net',
     fromMe: false,
-    id: '3A1E66105E3BE802FAAB',
+    id: '3A2DBB1856BFE7325DCA',
     participant: undefined
   },
-  messageTimestamp: 1704585305,
-  pushName: 'Valentina Escobar 🌮🤍',
+  messageTimestamp: 1711494538,
+  pushName: 'Valentina Escobar🤍🌮',
   broadcast: false,
   message: Message {
-    conversation: 'Vale',
+    conversation: 'Sara Valentina',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Vale',
+  body: 'Sara Valentina',
   from: '573046767743'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_aab053f7-a231-45ec-9440-e275c68e72d0',
-  keyword: 'ans_91612f5a-5f78-499e-8362-617f408b2c7c',
+  ref: 'ans_b25cdba7-28dc-4973-88b7-406eed952225',
+  keyword: 'ans_5fea7875-f742-4a20-ba3f-0bbd45b7baaa',
   answer: '¿Cual es tu direccion?',
   options: {
     media: null,
@@ -170,32 +173,146 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '915da1187928560454a48a2861e9ce23'
+  refSerialize: 'b78addffbcffec56e8ba0cd45036afde'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573046767743@s.whatsapp.net',
     fromMe: false,
-    id: '3A456CD339A96A6AB03C',
+    id: '3AC9BB05688EDF3F2BE3',
     participant: undefined
   },
-  messageTimestamp: 1704585307,
-  pushName: 'Valentina Escobar 🌮🤍',
+  messageTimestamp: 1711494545,
+  pushName: 'Valentina Escobar🤍🌮',
   broadcast: false,
   message: Message {
-    conversation: 'Hdbs',
+    conversation: 'Av universitaria NO',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Hdbs',
+  body: 'Av universitaria NO',
   from: '573046767743'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_6f78e734-05cc-4852-a3f6-6a9de125adde',
-  keyword: 'ans_aab053f7-a231-45ec-9440-e275c68e72d0',
-  answer: 'Tus datos son:',
+  ref: 'ans_e34f7f69-35c8-4a20-8e92-6f01bd7f04e4',
+  keyword: 'ans_b25cdba7-28dc-4973-88b7-406eed952225',
+  answer: 'Número de teléfono de la persona que recibe el domicilio',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '07577604b49ac52585117e2ad988a33a'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_5fea7875-f742-4a20-ba3f-0bbd45b7baaa',
+  keyword: 'key_deb5439a-043e-47d2-8ba9-1154fcf637ca',
+  answer: '¿Cual es tu nombre?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '52270e181fa9eb24251f27946914ef2d'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3A6D149E8EE317CD107D',
+    participant: undefined
+  },
+  messageTimestamp: 1711494562,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '573046767743'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b25cdba7-28dc-4973-88b7-406eed952225',
+  keyword: 'ans_5fea7875-f742-4a20-ba3f-0bbd45b7baaa',
+  answer: '¿Cual es tu direccion?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'b78addffbcffec56e8ba0cd45036afde'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3A98D12B402F2AF6A422',
+    participant: undefined
+  },
+  messageTimestamp: 1711494565,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '573046767743'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3A47E7F9B79767B3749F',
+    participant: undefined
+  },
+  messageTimestamp: 1711494569,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '573046767743'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_effcea47-c0ff-49c2-848c-57502b0c7e4b',
+  keyword: 'key_c4e3a486-c827-4823-8572-64b78b6ea29c',
+  answer: '🙌 Hola bienvenido a la Freseria🍓',
   options: {
     media: null,
     buttons: [],
@@ -206,14 +323,171 @@
     ref: null,
     nested: [],
     keyword: {},
-    callback: true
+    callback: false
   },
-  refSerialize: 'dd89aeec6e74924e9f21af98c7890f41'
+  refSerialize: '99e683a682170d4ebd4946236af6b8d8'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c1afcd71-2049-4063-8777-f0f75608d8b6',
-  keyword: 'ans_6f78e734-05cc-4852-a3f6-6a9de125adde',
-  answer: '¿Confirmas tus datos? Escribe  *si* o *no* dependiendo la opción que deseas escoger #️⃣\n' +
+  ref: 'ans_605ec2fa-00b9-4817-a5f3-a0526c89791f',
+  keyword: 'ans_effcea47-c0ff-49c2-848c-57502b0c7e4b',
+  answer: 'Escribe un mensaje con el número de la opción que desees:\n' +
+    '👉 *A*  Domicilios\n' +
+    '👉 *B*  Recoger pedido en tienda\n' +
+    '👉 *C*  Regalos',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '8f7e6ee96a216ba0262b3da8be480185'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_effcea47-c0ff-49c2-848c-57502b0c7e4b',
+  keyword: 'key_c4e3a486-c827-4823-8572-64b78b6ea29c',
+  answer: '🙌 Hola bienvenido a la Freseria🍓',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '99e683a682170d4ebd4946236af6b8d8'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_effcea47-c0ff-49c2-848c-57502b0c7e4b',
+  keyword: 'key_c4e3a486-c827-4823-8572-64b78b6ea29c',
+  answer: '🙌 Hola bienvenido a la Freseria🍓',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '99e683a682170d4ebd4946236af6b8d8'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b25cdba7-28dc-4973-88b7-406eed952225',
+  keyword: 'ans_5fea7875-f742-4a20-ba3f-0bbd45b7baaa',
+  answer: '¿Cual es tu direccion?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'b78addffbcffec56e8ba0cd45036afde'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_605ec2fa-00b9-4817-a5f3-a0526c89791f',
+  keyword: 'ans_effcea47-c0ff-49c2-848c-57502b0c7e4b',
+  answer: 'Escribe un mensaje con el número de la opción que desees:\n' +
+    '👉 *A*  Domicilios\n' +
+    '👉 *B*  Recoger pedido en tienda\n' +
+    '👉 *C*  Regalos',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '8f7e6ee96a216ba0262b3da8be480185'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_605ec2fa-00b9-4817-a5f3-a0526c89791f',
+  keyword: 'ans_effcea47-c0ff-49c2-848c-57502b0c7e4b',
+  answer: 'Escribe un mensaje con el número de la opción que desees:\n' +
+    '👉 *A*  Domicilios\n' +
+    '👉 *B*  Recoger pedido en tienda\n' +
+    '👉 *C*  Regalos',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '8f7e6ee96a216ba0262b3da8be480185'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3A9DB666289CD6427425',
+    participant: undefined
+  },
+  messageTimestamp: 1711494572,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'A',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'A',
+  from: '573046767743'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3A670B4BAF4099105CF9',
+    participant: undefined
+  },
+  messageTimestamp: 1711494576,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'Haga\nJava\nJava',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Haga\nJava\nJava',
+  from: '573046767743'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_c0e1f2db-bdad-49f1-8c4f-fbf1f5306c03',
+  keyword: 'ans_6e8d7f6a-e63d-40e6-bbda-c9494fc7881c',
+  answer: '¿Confirmas tu pedido? Escribe *Si* o *No* de acuerdo a la opción que deseas escoger\n' +
     'Si ✅\n' +
     'No ❌',
   options: {
@@ -228,17 +502,17 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '7c3e5bc7d7475fd590028d229cd4953a'
+  refSerialize: '05833c05f9ab7e132e11cbe0e5dd5a02'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573046767743@s.whatsapp.net',
     fromMe: false,
-    id: '3A7CF635843F8652152A',
+    id: '3A232225ADD69FA663C6',
     participant: undefined
   },
-  messageTimestamp: 1704585313,
-  pushName: 'Valentina Escobar 🌮🤍',
+  messageTimestamp: 1711494579,
+  pushName: 'Valentina Escobar🤍🌮',
   broadcast: false,
   message: Message {
     conversation: 'Si',
@@ -249,4 +523,741 @@
   },
   body: 'Si',
   from: '573046767743'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3ADA81AFDACAF739B7DE',
+    participant: undefined
+  },
+  messageTimestamp: 1711494582,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'A',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'A',
+  from: '573046767743'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b25cdba7-28dc-4973-88b7-406eed952225',
+  keyword: 'ans_5fea7875-f742-4a20-ba3f-0bbd45b7baaa',
+  answer: '¿Cual es tu direccion?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'b78addffbcffec56e8ba0cd45036afde'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3A13672AF4B07C761EB2',
+    participant: undefined
+  },
+  messageTimestamp: 1711494586,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'B',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'B',
+  from: '573046767743'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_e34f7f69-35c8-4a20-8e92-6f01bd7f04e4',
+  keyword: 'ans_b25cdba7-28dc-4973-88b7-406eed952225',
+  answer: 'Número de teléfono de la persona que recibe el domicilio',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '07577604b49ac52585117e2ad988a33a'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3A574D30136785654B2E',
+    participant: undefined
+  },
+  messageTimestamp: 1711494590,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'Ha',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Ha',
+  from: '573046767743'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3ADDB106A8F30718BB4E',
+    participant: undefined
+  },
+  messageTimestamp: 1711494593,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: '304667677',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '304667677',
+  from: '573046767743'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_08574100-d216-4e44-b5ec-99f3738b5c22',
+  keyword: 'ans_e34f7f69-35c8-4a20-8e92-6f01bd7f04e4',
+  answer: 'Tus datos son:',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '4f5c1a3561b27269d5c853909c6f08b7'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_745c57a1-94b3-4dd5-bbc1-5ea5e252be0a',
+  keyword: 'ans_08574100-d216-4e44-b5ec-99f3738b5c22',
+  answer: '¿Confirmas tus datos? Escribe *Si* o *No* dependiendo la opción que deseas escoger\n' +
+    'Si ✅\n' +
+    'No ❌',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '99b451dbccd04c8867f1ec705cd7286c'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3ACA75640877EA133442',
+    participant: undefined
+  },
+  messageTimestamp: 1711494597,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'Si',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Si',
+  from: '573046767743'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3A295CF3C6AABA5D4E8B',
+    participant: undefined
+  },
+  messageTimestamp: 1711494601,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'Si',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Si',
+  from: '573046767743'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3A46516CBBB11C81CC5B',
+    participant: undefined
+  },
+  messageTimestamp: 1711494609,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'A',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'A',
+  from: '573046767743'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3AC6CD365FD2AD11570F',
+    participant: undefined
+  },
+  messageTimestamp: 1711494614,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'Ahhh\nJehuebs\nHdbs',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Ahhh\nJehuebs\nHdbs',
+  from: '573046767743'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_c0e1f2db-bdad-49f1-8c4f-fbf1f5306c03',
+  keyword: 'ans_6e8d7f6a-e63d-40e6-bbda-c9494fc7881c',
+  answer: '¿Confirmas tu pedido? Escribe *Si* o *No* de acuerdo a la opción que deseas escoger\n' +
+    'Si ✅\n' +
+    'No ❌',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '05833c05f9ab7e132e11cbe0e5dd5a02'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3A28982D0835267D1FE7',
+    participant: undefined
+  },
+  messageTimestamp: 1711494616,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'Si',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Si',
+  from: '573046767743'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3AF0271411931460541A',
+    participant: undefined
+  },
+  messageTimestamp: 1711494636,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'sara valenrina no',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'sara valenrina no',
+  from: '573046767743'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b25cdba7-28dc-4973-88b7-406eed952225',
+  keyword: 'ans_5fea7875-f742-4a20-ba3f-0bbd45b7baaa',
+  answer: '¿Cual es tu direccion?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'b78addffbcffec56e8ba0cd45036afde'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3AD81F09A99A0CDA011A',
+    participant: undefined
+  },
+  messageTimestamp: 1711494652,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'ahhs abdbsvsvhw uejdvsvavdvsjakakdhdhdjdvaj',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'ahhs abdbsvsvhw uejdvsvavdvsjakakdhdhdjdvaj',
+  from: '573046767743'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_e34f7f69-35c8-4a20-8e92-6f01bd7f04e4',
+  keyword: 'ans_b25cdba7-28dc-4973-88b7-406eed952225',
+  answer: 'Número de teléfono de la persona que recibe el domicilio',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '07577604b49ac52585117e2ad988a33a'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3A559D1E1692D7FA9BB2',
+    participant: undefined
+  },
+  messageTimestamp: 1711494656,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: '304',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '304',
+  from: '573046767743'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_08574100-d216-4e44-b5ec-99f3738b5c22',
+  keyword: 'ans_e34f7f69-35c8-4a20-8e92-6f01bd7f04e4',
+  answer: 'Tus datos son:',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '4f5c1a3561b27269d5c853909c6f08b7'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_745c57a1-94b3-4dd5-bbc1-5ea5e252be0a',
+  keyword: 'ans_08574100-d216-4e44-b5ec-99f3738b5c22',
+  answer: '¿Confirmas tus datos? Escribe *Si* o *No* dependiendo la opción que deseas escoger\n' +
+    'Si ✅\n' +
+    'No ❌',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '99b451dbccd04c8867f1ec705cd7286c'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3ABEEE06DDE333CBFB53',
+    participant: undefined
+  },
+  messageTimestamp: 1711494659,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'Si',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Si',
+  from: '573046767743'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3A9C125DA2759FEB2906',
+    participant: undefined
+  },
+  messageTimestamp: 1711494663,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'No',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'No',
+  from: '573046767743'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3A6D402596E7FC9DB532',
+    participant: undefined
+  },
+  messageTimestamp: 1711494665,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '573046767743'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_effcea47-c0ff-49c2-848c-57502b0c7e4b',
+  keyword: 'key_c4e3a486-c827-4823-8572-64b78b6ea29c',
+  answer: '🙌 Hola bienvenido a la Freseria🍓',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '99e683a682170d4ebd4946236af6b8d8'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_605ec2fa-00b9-4817-a5f3-a0526c89791f',
+  keyword: 'ans_effcea47-c0ff-49c2-848c-57502b0c7e4b',
+  answer: 'Escribe un mensaje con el número de la opción que desees:\n' +
+    '👉 *A*  Domicilios\n' +
+    '👉 *B*  Recoger pedido en tienda\n' +
+    '👉 *C*  Regalos',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '8f7e6ee96a216ba0262b3da8be480185'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3A98E58B0E2E1720F78A',
+    participant: undefined
+  },
+  messageTimestamp: 1711494669,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'A',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'A',
+  from: '573046767743'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3AEC6F785DA99549D817',
+    participant: undefined
+  },
+  messageTimestamp: 1711494676,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'Ho\nShe v\nJena\niDVD',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Ho\nShe v\nJena\niDVD',
+  from: '573046767743'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_c0e1f2db-bdad-49f1-8c4f-fbf1f5306c03',
+  keyword: 'ans_6e8d7f6a-e63d-40e6-bbda-c9494fc7881c',
+  answer: '¿Confirmas tu pedido? Escribe *Si* o *No* de acuerdo a la opción que deseas escoger\n' +
+    'Si ✅\n' +
+    'No ❌',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '05833c05f9ab7e132e11cbe0e5dd5a02'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3A145B0EE729FB291767',
+    participant: undefined
+  },
+  messageTimestamp: 1711494679,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'Si',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Si',
+  from: '573046767743'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3A1395E76D66DD6864C5',
+    participant: undefined
+  },
+  messageTimestamp: 1711494687,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'Sara Valentina Sierra Escobar',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Sara Valentina Sierra Escobar',
+  from: '573046767743'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b25cdba7-28dc-4973-88b7-406eed952225',
+  keyword: 'ans_5fea7875-f742-4a20-ba3f-0bbd45b7baaa',
+  answer: '¿Cual es tu direccion?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'b78addffbcffec56e8ba0cd45036afde'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_5fea7875-f742-4a20-ba3f-0bbd45b7baaa',
+  keyword: 'key_deb5439a-043e-47d2-8ba9-1154fcf637ca',
+  answer: '¿Cual es tu nombre?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '52270e181fa9eb24251f27946914ef2d'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3A0B53DC24CD09E4A1A3',
+    participant: undefined
+  },
+  messageTimestamp: 1711494700,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'Juan Andrés Suárez Castañeda',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Juan Andrés Suárez Castañeda',
+  from: '573046767743'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b25cdba7-28dc-4973-88b7-406eed952225',
+  keyword: 'ans_5fea7875-f742-4a20-ba3f-0bbd45b7baaa',
+  answer: '¿Cual es tu direccion?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'b78addffbcffec56e8ba0cd45036afde'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573046767743@s.whatsapp.net',
+    fromMe: false,
+    id: '3A620E68E3317250F10A',
+    participant: undefined
+  },
+  messageTimestamp: 1711494713,
+  pushName: 'Valentina Escobar🤍🌮',
+  broadcast: false,
+  message: Message {
+    conversation: 'Av Universidad Nacional Autónoma',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Av Universidad Nacional Autónoma',
+  from: '573046767743'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_e34f7f69-35c8-4a20-8e92-6f01bd7f04e4',
+  keyword: 'ans_b25cdba7-28dc-4973-88b7-406eed952225',
+  answer: 'Número de teléfono de la persona que recibe el domicilio',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '07577604b49ac52585117e2ad988a33a'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_5fea7875-f742-4a20-ba3f-0bbd45b7baaa',
+  keyword: 'key_deb5439a-043e-47d2-8ba9-1154fcf637ca',
+  answer: '¿Cual es tu nombre?',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '52270e181fa9eb24251f27946914ef2d'
 }

@@ -20,7 +20,7 @@ const flujoPedido = addKeyword('domicilio').addAnswer(['Sigue este enlace para v
         console.log('...')
 
         if(ctx.body ==='No' || ctx.body ==='no'){
-            await state.clear(['name', 'dir']);
+            await state.clear(['pedido']);
             return gotoFlow(flujoPedido)
         }else if (ctx.body ==='Si'|| ctx.body ==='si'){
             await flowDynamic(`Productos registrados`)
@@ -28,77 +28,6 @@ const flujoPedido = addKeyword('domicilio').addAnswer(['Sigue este enlace para v
         }
 
     })
-
-
-const checkMessageLength = (message) => {
-    const maxLength = 160; // Establece la longitud máxima del mensaje
-
-    if (message.length > maxLength) {
-        return true; // El mensaje es demasiado largo
-    } else {
-        return false; // El mensaje es aceptable
-    }
-};
-
-/*
-
-const flujoDatosPedido = addKeyword(['Si', 'si', 'SI'])
-
-    .addAnswer('¿Cual es tu nombre?', { capture: true }, async (ctx, { state, flowDynamic, fallBack }) => {
-        const nombreCapturado = ctx.body;
-        const regexNombreCompleto = /^[A-Za-z\s']+$/;
-
-        // Verifica la longitud del mensaje
-        if (regexNombreCompleto.test(nombreCapturado)) {
-            console.log('Nombre capturado:', nombreCapturado);
-            await state.update({ name: nombreCapturado });
-        } else {
-            return fallBack()
-        }
-
-    })
-    .addAnswer('¿Cual es tu direccion?', { capture: true }, async (ctx, { state, flowDynamic, fallBack }) => {
-        const direccionCapturada = ctx.body;
-        const regexDireccion = /^[A-Za-z0-9\s#.,-]+$/;
-
-        if(regexDireccion.test(direccionCapturada)){
-            console.log('Dirección capturada:', direccionCapturada);
-            await state.update({ dir: direccionCapturada });
-        }else{
-            return fallBack()
-        }
-
-    }).addAnswer('Número de teléfono de la persona que recibe el domicilio', { capture: true }, async (ctx, { state, flowDynamic, fallBack }) => {
-        const telCapturado = ctx.body;
-        const regex = /^[0-9]+$/;
-
-        if (regex.test(telCapturado)){
-            console.log('Telefono capturadao:', telCapturado);
-            await state.update({ tel: telCapturado });
-        }else{
-            return fallBack()
-        }
-
-    })
-    .addAnswer('Tus datos son:', null, async (_, { flowDynamic, state }) => {
-        const myState = state.getMyState()
-        await flowDynamic(`Nombre: ${myState.name} \nDirección: ${myState.dir} \nTeléfono: ${myState.tel}`)
-    }).addAnswer(['¿Confirmas tus datos? Escribe *Si* o *No* dependiendo la opción que deseas escoger', 'Si ✅','No ❌'],{capture:true},async(ctx, {state, flowDynamic, gotoFlow}) => {
-
-        console.log('...')
-
-
-        if(ctx.body ==='No' || ctx.body ==='no'){
-            await state.clear(['name', 'dir']);
-            return gotoFlow(flujoDatosPedido)
-        }else if (ctx.body ==='Si'|| ctx.body ==='si'){
-            return gotoFlow(flujoConfirmacion)
-        }
-
-    })
-
- */
-
 
 const flujoDatosPedido = addKeyword(["Si",'si'], { sensitive: true })
     .addAnswer(
@@ -109,7 +38,7 @@ const flujoDatosPedido = addKeyword(["Si",'si'], { sensitive: true })
         }
     )
     .addAnswer(
-        "¿Dirección?",
+        "Escribe la dirección de domicilio",
         { capture: true },
         async (ctx, { state }) => {
             await state.update({ direccion: ctx.body });
@@ -130,16 +59,18 @@ const flujoDatosPedido = addKeyword(["Si",'si'], { sensitive: true })
             }
         }
     )
-    .addAnswer('Productos de tu orden:', null, async (_, { flowDynamic, state }) => {
+    .addAnswer('Resumen de tu pedido:', null, async (_, { flowDynamic, state }) => {
         const myState = state.getMyState()
-        await flowDynamic(`\n ${myState.pedido} \n \n📖Datos Domicilio: \nNombre: ${myState.name} \nDirección: ${myState.direccion} \nTeléfono: ${myState.tel}`)
+        await flowDynamic(`Productos de tu orden:\n ${myState.pedido} \n \n📖Datos Domicilio: \nNombre: ${myState.name} \nDirección: ${myState.direccion} \nTeléfono: ${myState.tel}`)
     }).addAnswer(['¿Confirmas tus datos? Escribe *Si* o *No* dependiendo la opción que deseas escoger', 'Si ✅','No ❌'],{capture:true},async(ctx, {state, flowDynamic, gotoFlow}) => {
 
         console.log('...')
 
 
         if(ctx.body ==='No' || ctx.body ==='no'){
-            await state.clear(['name', 'dir']);
+            const myState = state.getMyState()
+            await state.clear(['name', 'direccion', 'tel']);
+            await state.update({ pedido: myState.pedido });
             return gotoFlow(flujoDatosPedido)
         }else if (ctx.body ==='Si'|| ctx.body ==='si'){
             await flowDynamic("Pedido Realizado, si sucede cualquier inconveniente te escribira un asesor")
@@ -155,9 +86,7 @@ const flujoDatosPedido = addKeyword(["Si",'si'], { sensitive: true })
 
 
 
-const atentoDomicilio = addKeyword('salida').addAnswer('¡Muchas gracias! Ten lindo día, recuerda estar atento a tu domiclio',{capture:true},async(ctx, {state, flowDynamic, gotoFlow}) => {
-
-})
+const atentoDomicilio = addKeyword('salida').addAnswer('¡Muchas gracias! Ten lindo día, recuerda estar atento a tu domiclio',{capture:true},async(ctx, {state, flowDynamic, gotoFlow}) => {})
 
 
 
